@@ -1,0 +1,13 @@
+.country {
+  border: 3px solid wheat;
+  padding: 10px;
+  border-radius: 20px;
+}
+.country-visited {
+  background-color: beige;
+  color: gray;
+}
+.btn-visited {
+  background-color: chartreuse;
+  color: #000;
+}
