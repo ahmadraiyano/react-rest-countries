@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { use } from 'react';
 
-const Countries = () => {
+const Countries = ({loadCountries}) => {
+    const countriesData = use(loadCountries)
+    const countries = countriesData.countries
+    console.log(countries)
     return (
         <div>
-            <h2>In the countries</h2>
+            <h2>In the countries: {countries.length}</h2>
         </div>
     );
 };
