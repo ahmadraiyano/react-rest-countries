@@ -1,5 +1,21 @@
 .countries {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+    justify-content: center;
+    text-align: center;
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .countries {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .countries {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1200px)  {
+  .countries {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
